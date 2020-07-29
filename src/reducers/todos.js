@@ -11,7 +11,7 @@ const initialState = [
 export default function todos(state = initialState, action) {
   switch (action.type) {
     case ADD_TODO:
-      console.log("Add Message")
+      console.log("Add Message", action.type)
       return [
         ...state,
         {
@@ -22,7 +22,7 @@ export default function todos(state = initialState, action) {
       ]
 
     case DELETE_TODO:
-      console.log("Test Message")
+      console.log("Delete Message", action.type)
       return state.filter(todo =>
         todo.id !== action.id
       )

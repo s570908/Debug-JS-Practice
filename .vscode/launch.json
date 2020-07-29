@@ -2,6 +2,19 @@
     "version": "0.1.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "skipFiles": [
+                "node_modules/*",
+                "react-dom*.js",
+                "jquery-3.3.1.min.js"
+            ]
+        },
+
+        {
             "name": "Launch Js Debug Example",
             "type": "chrome",
             "request": "launch",

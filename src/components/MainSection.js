@@ -61,6 +61,8 @@ export default class MainSection extends Component {
     const { todos, actions } = this.props
     const { filter } = this.state
 
+    console.log("MainSection", todos)
+
     const filteredTodos = todos.filter(TODO_FILTERS[filter])
     const completedCount = todos.reduce((count, todo) =>
       todo.completed ? count + 1 : count,
